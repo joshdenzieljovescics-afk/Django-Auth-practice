@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Full Stack: Django + React",
+      "configurations": [
+        "Python: Django",
+        "React: Vite"
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Python: Django",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/tech_shop/manage.py",
+      "args": ["runserver", "8000", "--noreload"],
+      "django": true
+    },
+    {   
+      "type": "chrome",
+      "request": "launch",
+      "name": "React: Vite",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/frontend/src"
+    }
+  ]
+}
